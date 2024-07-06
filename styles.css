@@ -1,0 +1,432 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #dbdbd3;
+  overflow-x: hidden;
+}
+.box{
+  width: 100%;
+  height: 100%;
+  margin: 0 10px;
+}
+.navbar {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamberger i {
+  padding: 10px;
+}
+
+header {
+  width: 100vw;
+  height: 4vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+i {
+  font-size: 25px;
+}
+
+nav {
+  width: 100%;
+  height: 5vh;
+  background-color: #dbdbd3;
+  padding: 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+}
+
+.nav-links li {
+  text-align: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px;
+  display: block;
+  transition: background-color 0.3s ease;
+  font-family: quicksand;
+  font-weight: 600;
+}
+
+.nav-links li a:hover {
+  background-color: #c1c1c1;
+}
+
+.user-actions {
+  position: relative;
+  right: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-actions a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px;
+  font-family: quicksand;
+}
+
+.section {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'quicksand semibold';
+}
+
+.section1 {
+  width: 9vw;
+  height: 30px;
+  position: relative;
+  left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section h3 {
+  color: #9A1615;
+  text-transform: capitalize;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2 p {
+  padding: 1px 10px;
+  background-color: #c1c1c1;
+  margin: 0px 7px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'quicksand';
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.section3 {
+  width: 6vw;
+  height: 30px;
+  position: relative;
+  right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  padding-left: 20px;
+}
+
+.filters {
+  width: 290px;
+  background-color: #dbdbd3;
+  border-right: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.filters h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'quicksand';
+  font-size: 18px;
+}
+
+.filters ul {
+  list-style: none;
+  padding-top: 5px;
+  padding-left: 20px;
+  overflow-y: scroll;
+}
+
+.filters ul li {
+  margin: 3px 0;
+  display: flex;
+  align-items: center;
+  font-family: 'quicksand';
+  font-weight: 600;
+}
+
+.filters ul li label {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.color {
+  width: 100%;
+  height: 5vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #D4D4CC;
+  border: 2px solid #ebeae6;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.color h3 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
+
+.color-box {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  flex-grow: 1;
+}
+
+.product-likes {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  margin: 0;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px;
+  padding-top: 10px;
+  margin: 0;
+  font-family: quicksand;
+}
+.product-info h4{
+  margin: 0;
+}
+.product {
+  background-color: #dbdbd3;
+  padding-top: 5px;
+  text-align: center;
+  
+}
+
+.product-image{
+  width: 350px;
+  height: 230px;
+  transition: transform 0.3s ease;
+}
+
+.product .bag {
+  text-align: left;
+  padding: 10px 25px;
+  margin: 0;
+}
+
+.price {
+  text-align: left;
+  padding: 0 25px;
+  margin: 0;
+  font-family: ITC Zapf Dingbats;
+  font-weight: bolder;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #000;
+}
+
+.size-grid {
+  position: relative;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  max-width: 100px;
+  margin: 2px 20px;
+}
+
+.size-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+  background-color: #dbdbd3;
+  border: 1px solid #a2a19c;
+  font-size: 14px;
+}
+
+#price-list {
+  margin: 0;
+}
+
+#color-list {
+  margin: 0;
+}
+
+#category-list {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+.login {
+  display: none;
+}
+
+.product img:hover {
+  transform: scale(1.3);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section {
+    display: none;
+  }
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    text-align: center;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #c1c1c1;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .navbar,
+  .user-actions {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+  }
+  .section {
+    display: none;
+  }
+  .filters {
+    width: 100%;
+    height: 100vh;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar,
+  .section,
+  .filters,
+  .product {
+    flex-direction: column;
+    align-items: center;
+  }
+  .user-actions {
+    flex-direction: column;
+    display: none;
+  }
+  .login {
+    display: block;
+  }
+  #hamberger {
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+  }
+  #search {
+    display: none;
+  }
+  .logo img {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .products {
+    position: absolute;
+    top: 110%;
+  }
+  .products {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    position: relative;
+    top: 250vw;
+  }
+  .section {
+    display: none;
+  }
+  .nav-links{
+    padding: 20px;
+  }
+  .filters {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    top: 90vw;
+  }
+}
